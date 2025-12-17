@@ -10,20 +10,28 @@
         font-family: Arial, Helvetica, sans-serif;
         background: #0f172a;
         color: #e5e7eb;
-        padding: 20px;
+        padding: 10px;
+        margin: 0;
     }
 
     h1, h2 {
         text-align: center;
         color: #f9fafb;
-        margin-bottom: 15px;
+        margin: 15px 0;
+        font-size: clamp(18px, 4vw, 26px);
+    }
+
+    .table-container {
+        width: 100%;
+        overflow-x: auto;
+        margin-bottom: 30px;
     }
 
     table {
         width: 100%;
+        min-width: 750px;
         border-collapse: collapse;
         background: #020617;
-        margin-bottom: 30px;
         box-shadow: 0 0 15px rgba(0,0,0,0.8);
         border-radius: 8px;
         overflow: hidden;
@@ -32,24 +40,18 @@
     th {
         background: #1e293b;
         color: #38bdf8;
-        padding: 12px;
-        font-size: 14px;
+        padding: 10px;
+        font-size: 13px;
         text-transform: uppercase;
-        border-bottom: 1px solid #334155;
+        white-space: nowrap;
     }
 
     td {
-        padding: 10px;
+        padding: 8px;
         text-align: center;
+        font-size: 13px;
         border-bottom: 1px solid #1e293b;
-    }
-
-    tr:nth-child(even) {
-        background: #020617;
-    }
-
-    tr:nth-child(odd) {
-        background: #020617;
+        white-space: nowrap;
     }
 
     tr:hover {
@@ -66,21 +68,81 @@
         font-weight: bold;
     }
 
-    .derrota {
-        color: #ef4444;
-        font-weight: bold;
+    /* ===== CLASSIFICAÇÃO ===== */
+    #classificacao table {
+        min-width: 800px;
     }
 
-    #classificacao tr:hover {
-        background: #020617;
+    /* ===== MOBILE AJUSTES ===== */
+    @media (max-width: 600px) {
+        body {
+            padding: 8px;
+        }
+
+        th, td {
+            padding: 6px;
+            font-size: 12px;
+        }
+
+        h1, h2 {
+            font-size: 18px;
+        }
     }
 </style>
 </head>
 
 <body>
 
+<h1>Tabela de Jogos</h1>
+
+<div class="table-container">
+<table id="tabelaJogos">
+<thead>
+<tr>
+    <th>Jogo</th>
+    <th>Jogador 1</th>
+    <th>Gols</th>
+    <th>Jogador 2</th>
+    <th>Gols</th>
+    <th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td><td>Celso</td><td>0</td><td>Henrique</td><td>0</td><td></td></tr>
+<tr><td>2</td><td>Bruno</td><td>0</td><td>Henrique</td><td>0</td><td></td></tr>
+<tr><td>3</td><td>Lucas</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>4</td><td>Breno</td><td>0</td><td>Henrique</td><td>0</td><td></td></tr>
+<tr><td>5</td><td>Kayque</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>6</td><td>Bruno</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
+<tr><td>7</td><td>Breno</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
+<tr><td>8</td><td>Bruno</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>9</td><td>Henrique</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
+<tr><td>10</td><td>Kayque</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>11</td><td>Henrique</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>12</td><td>Celso</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>13</td><td>Celso</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
+<tr><td>14</td><td>Kayque</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
+<tr><td>15</td><td>Celso</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
+<tr><td>16</td><td>Samuel</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>17</td><td>Bruno</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>18</td><td>Henrique</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>19</td><td>Bruno</td><td>0</td><td>Celso</td><td>0</td><td></td></tr>
+<tr><td>20</td><td>Bruno</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
+<tr><td>21</td><td>Henrique</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
+<tr><td>22</td><td>Breno</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>23</td><td>Celso</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>24</td><td>Breno</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>25</td><td>Breno</td><td>0</td><td>Celso</td><td>0</td><td></td></tr>
+<tr><td>26</td><td>Lucas</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>27</td><td>Breno</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
+<tr><td>28</td><td>Breno</td><td>0</td><td>Bruno</td><td>0</td><td></td></tr>
+</tbody>
+</table>
+</div>
+
 <h2>Classificação Geral</h2>
 
+<div class="table-container">
 <table id="classificacao">
 <thead>
 <tr>
@@ -95,53 +157,8 @@
 </tr>
 </thead>
 <tbody></tbody>
-
-<h1>Tabela de Jogos</h1>
-
-<table id="tabelaJogos">
-<thead>
-<tr>
-    <th>Jogador 1</th>
-    <th>Gols</th>
-    <th>Jogador 2</th>
-    <th>Gols</th>
-    <th>Resultado</th>
-</tr>
-</thead>
-
-<tbody>
-<tr><td>Celso</td><td>0</td><td>Henrique</td><td>0</td><td></td></tr>
-<tr><td>Bruno</td><td>0</td><td>Henrique</td><td>0</td><td></td></tr>
-<tr><td>Lucas</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
-<tr><td>Breno</td><td>0</td><td>Henrique</td><td>0</td><td></td></tr>
-<tr><td>Kayque</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
-<tr><td>Bruno</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
-<tr><td>Breno</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
-<tr><td>Bruno</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
-<tr><td>Henrique</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
-<tr><td>Kayque</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
-<tr><td>Henrique</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
-<tr><td>Celso</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
-<tr><td>Celso</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
-<tr><td>Kayque</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
-<tr><td>Celso</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
-<tr><td>Samuel</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
-<tr></tr><td>Bruno</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
-<tr><td>Henrique</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
-<tr><td>Bruno</td><td>0</td><td>Celso</td><td>0</td><td></td></tr>
-<tr><td>Bruno</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
-<tr><td>Henrique</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
-<tr><td>Breno</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
-<tr><td>Celso</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
-<tr><td>Breno</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
-<tr><td>Breno</td><td>0</td><td>Celso</td><td>0</td><td></td></tr>
-<tr><td>Lucas</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
-<tr><td>Breno</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
-<tr><td>Breno</td><td>0</td><td>Bruno</td><td>0</td><td></td></tr>
-</tbody>
 </table>
-
-</table>
+</div>
 
 <script>
 function calcular() {
@@ -207,4 +224,3 @@ calcular();
 
 </body>
 </html>
-
