@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Tabela de Jogos</title>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #0f172a;
+        color: #e5e7eb;
+        padding: 20px;
+    }
+
+    h1, h2 {
+        text-align: center;
+        color: #f9fafb;
+        margin-bottom: 15px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #020617;
+        margin-bottom: 30px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.8);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    th {
+        background: #1e293b;
+        color: #38bdf8;
+        padding: 12px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border-bottom: 1px solid #334155;
+    }
+
+    td {
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #1e293b;
+    }
+
+    tr:nth-child(even) {
+        background: #020617;
+    }
+
+    tr:nth-child(odd) {
+        background: #020617;
+    }
+
+    tr:hover {
+        background: #020617;
+    }
+
+    .vitoria {
+        color: #22c55e;
+        font-weight: bold;
+    }
+
+    .empate {
+        color: #facc15;
+        font-weight: bold;
+    }
+
+    .derrota {
+        color: #ef4444;
+        font-weight: bold;
+    }
+
+    #classificacao tr:hover {
+        background: #020617;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>Classificação Geral</h2>
+
+<table id="classificacao">
+<thead>
+<tr>
+    <th>Jogador</th>
+    <th>Pontos</th>
+    <th>Vitórias</th>
+    <th>Empates</th>
+    <th>Derrotas</th>
+    <th>Gols Pró</th>
+    <th>Gols Contra</th>
+    <th>Saldo</th>
+</tr>
+</thead>
+<tbody></tbody>
+
+<h1>Tabela de Jogos</h1>
+
+<table id="tabelaJogos">
+<thead>
+<tr>
+    <th>Jogo</th>
+    <th>Jogador 1</th>
+    <th>Gols</th>
+    <th>Jogador 2</th>
+    <th>Gols</th>
+    <th>Resultado</th>
+</tr>
+</thead>
+
+<tbody>
+<tr><td>1</td><td>Celso</td><td>0</td><td>Henrique</td><td>0</td><td></td></tr>
+<tr><td>2</td><td>Bruno</td><td>0</td><td>Henrique</td><td>0</td><td></td></tr>
+<tr><td>3</td><td>Lucas</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>4</td><td>Breno</td><td>0</td><td>Henrique</td><td>0</td><td></td></tr>
+<tr><td>5</td><td>Kayque</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>6</td><td>Bruno</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
+<tr><td>7</td><td>Breno</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
+<tr><td>8</td><td>Bruno</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>9</td><td>Henrique</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
+<tr><td>10</td><td>Kayque</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>11</td><td>Henrique</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>12</td><td>Celso</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>13</td><td>Celso</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
+<tr><td>14</td><td>Kayque</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
+<tr><td>15</td><td>Celso</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
+<tr><td>16</td><td>Samuel</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>17</td><td>Bruno</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>18</td><td>Henrique</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>19</td><td>Bruno</td><td>0</td><td>Celso</td><td>0</td><td></td></tr>
+<tr><td>20</td><td>Bruno</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
+<tr><td>21</td><td>Henrique</td><td>0</td><td>Lucas</td><td>0</td><td></td></tr>
+<tr><td>22</td><td>Breno</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>23</td><td>Celso</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>24</td><td>Breno</td><td>0</td><td>Theo</td><td>0</td><td></td></tr>
+<tr><td>25</td><td>Breno</td><td>0</td><td>Celso</td><td>0</td><td></td></tr>
+<tr><td>26</td><td>Lucas</td><td>0</td><td>Samuel</td><td>0</td><td></td></tr>
+<tr><td>27</td><td>Breno</td><td>0</td><td>Kayque</td><td>0</td><td></td></tr>
+<tr><td>28</td><td>Breno</td><td>0</td><td>Bruno</td><td>0</td><td></td></tr>
+</tbody>
+</table>
+
+</table>
+
+<script>
+function calcular() {
+    const jogadores = {};
+    const linhas = document.querySelectorAll("#tabelaJogos tbody tr");
+
+    linhas.forEach(linha => {
+        const j1 = linha.children[1].innerText;
+        const g1 = parseInt(linha.children[2].innerText);
+        const j2 = linha.children[3].innerText;
+        const g2 = parseInt(linha.children[4].innerText);
+        const resultado = linha.children[5];
+
+        [j1, j2].forEach(j => {
+            if (!jogadores[j]) {
+                jogadores[j] = {p:0,v:0,e:0,d:0,gp:0,gc:0};
+            }
+        });
+
+        jogadores[j1].gp += g1;
+        jogadores[j1].gc += g2;
+        jogadores[j2].gp += g2;
+        jogadores[j2].gc += g1;
+
+        if (g1 > g2) {
+            jogadores[j1].p += 3; jogadores[j1].v++;
+            jogadores[j2].d++;
+            resultado.innerHTML = `<span class="vitoria">${j1} venceu</span>`;
+        } else if (g2 > g1) {
+            jogadores[j2].p += 3; jogadores[j2].v++;
+            jogadores[j1].d++;
+            resultado.innerHTML = `<span class="vitoria">${j2} venceu</span>`;
+        } else {
+            jogadores[j1].p += 1; jogadores[j2].p += 1;
+            jogadores[j1].e++; jogadores[j2].e++;
+            resultado.innerHTML = `<span class="empate">Empate</span>`;
+        }
+    });
+
+    const tbody = document.querySelector("#classificacao tbody");
+    tbody.innerHTML = "";
+
+    Object.entries(jogadores)
+        .sort((a,b) => b[1].p - a[1].p || (b[1].gp-b[1].gc)-(a[1].gp-a[1].gc))
+        .forEach(([nome,d]) => {
+            tbody.innerHTML += `
+                <tr>
+                    <td>${nome}</td>
+                    <td>${d.p}</td>
+                    <td>${d.v}</td>
+                    <td>${d.e}</td>
+                    <td>${d.d}</td>
+                    <td>${d.gp}</td>
+                    <td>${d.gc}</td>
+                    <td>${d.gp - d.gc}</td>
+                </tr>
+            `;
+        });
+}
+
+calcular();
+</script>
+
+</body>
+</html>
